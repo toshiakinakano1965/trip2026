@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>年末年始ドライブ旅 2026→2027｜ご夫婦の旅程（7泊8日）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@600;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1d2340; --ink2:#4a5070; --paper:#fbf7ef; --card:#ffffff;
+  --shu:#c8402e; --shu-soft:#f7e3dc; --gold:#b8892f; --line:#e7dfcf;
+  --sea:#2c6e8a; --sea-soft:#e1eef3;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.7;-webkit-text-size-adjust:100%}
+header.hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;padding:44px 22px 36px;text-align:center}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 85% 18%, rgba(200,64,46,.55) 0 60px, transparent 61px),
+  repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 2px, transparent 2px 14px);}
+.hero > *{position:relative}
+.tag{display:inline-block;border:1px solid rgba(255,255,255,.5);border-radius:99px;padding:2px 14px;font-size:.8rem;letter-spacing:.12em}
+h1{font-family:"Zen Old Mincho",serif;font-weight:900;font-size:clamp(1.7rem,6.4vw,2.6rem);line-height:1.3;margin:14px 0 6px;letter-spacing:.04em}
+.sub{opacity:.88;font-size:.95rem;margin:0}
+.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:18px}
+.facts span{background:rgba(255,255,255,.1);border-radius:8px;padding:6px 12px;font-size:.85rem}
+.count{margin-top:16px;font-family:"Zen Old Mincho",serif;font-size:1.05rem;color:#f5d58b}
+.switch{display:block;margin:18px auto 0;max-width:320px;background:#fff;color:var(--ink);text-decoration:none;border-radius:12px;padding:10px 14px;font-weight:700;font-size:.9rem}
+.switch small{display:block;font-weight:400;color:var(--ink2);font-size:.75rem}
+main{max-width:760px;margin:0 auto;padding:0 16px 60px}
+.route{margin:22px 0 6px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.route h2,.sec-title{font-family:"Zen Old Mincho",serif;font-size:1.1rem;margin:0 0 10px}
+.route ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 4px;align-items:center;font-size:.86rem}
+.route li{background:var(--sea-soft);color:var(--sea);border-radius:99px;padding:3px 10px;font-weight:500}
+.route li.arrow{background:none;color:var(--gold);padding:0 1px}
+.route li.join{background:var(--shu-soft);color:var(--shu)}
+nav.days{position:sticky;top:0;z-index:5;background:rgba(251,247,239,.94);backdrop-filter:blur(6px);margin:0 -16px;padding:10px 16px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+nav.days::-webkit-scrollbar{display:none}
+nav.days a{flex:0 0 auto;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 10px;font-size:.8rem;text-align:center;line-height:1.3}
+nav.days a b{display:block;font-size:.95rem}
+nav.days a.now{background:var(--shu);border-color:var(--shu);color:#fff}
+.day{scroll-margin-top:70px;margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.day.now{border-color:var(--shu);box-shadow:0 0 0 3px var(--shu-soft)}
+.day-head{display:flex;gap:14px;align-items:center;padding:14px 16px;border-bottom:1px dashed var(--line)}
+.date{flex:0 0 auto;width:62px;text-align:center;border-radius:12px;background:var(--ink);color:#fff;padding:6px 0;line-height:1.15}
+.date .d{font-family:"Zen Old Mincho",serif;font-size:1.5rem;display:block}
+.date .w{font-size:.72rem;opacity:.85}
+.date.hol{background:var(--shu)}
+.day-head h3{margin:0;font-size:1.02rem;line-height:1.45}
+.day-head .n{font-size:.75rem;color:var(--gold);font-weight:700;letter-spacing:.08em}
+.badge-now{display:none;margin-left:6px;background:var(--shu);color:#fff;border-radius:6px;font-size:.7rem;padding:1px 6px;vertical-align:middle}
+.day.now .badge-now{display:inline-block}
+ul.tl{list-style:none;margin:0;padding:12px 16px 4px}
+ul.tl li{position:relative;display:grid;grid-template-columns:58px 1fr;gap:10px;padding:0 0 14px}
+ul.tl li::before{content:"";position:absolute;left:66px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+ul.tl li::after{content:"";position:absolute;left:70px;top:20px;bottom:0;width:1px;background:var(--line)}
+ul.tl li:last-child::after{display:none}
+ul.tl li.key::before{background:var(--shu);box-shadow:0 0 0 3px var(--shu-soft)}
+.t{font-weight:700;font-size:.88rem;color:var(--ink2);font-variant-numeric:tabular-nums}
+.e{padding-left:18px;font-size:.93rem}
+.e strong{color:var(--shu)}
+.stay{margin:0 16px 16px;background:var(--paper);border-radius:12px;padding:9px 12px;font-size:.88rem;display:flex;gap:8px;align-items:center}
+.stay::before{content:"🏨"}
+.food{display:inline-block;background:#fff4dc;color:#8a5a00;border-radius:6px;padding:0 6px;font-size:.8rem;margin:2px 4px 0 0}
+footer{text-align:center;color:var(--ink2);font-size:.78rem;padding:10px 16px 40px}
+@media (min-width:640px){ul.tl li{grid-template-columns:70px 1fr} ul.tl li::before{left:78px} ul.tl li::after{left:82px}}
+.ofcs{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.ofc{display:inline-block;font-size:.76rem;text-decoration:none;color:var(--sea);background:var(--sea-soft);border-radius:99px;padding:2px 10px;line-height:1.6}
+.ofc::after{content:" ↗"}
+.note{font-size:.75rem;color:var(--ink2);text-align:center;margin:18px 0 0}
+.gwrap{margin:0 16px 12px}
+.gmap{display:block;text-align:center;text-decoration:none;font-weight:700;font-size:.88rem;color:#fff;background:var(--sea);border-radius:12px;padding:9px 12px}
+.gnote{display:block;font-size:.72rem;color:var(--ink2);margin-top:4px;text-align:center}
+
+.warn{color:var(--shu);font-size:.78rem}
+</style>
+</head>
+<body>
+<header class="hero">
+  <span class="tag">2026 → 2027 年末年始</span>
+  <h1>伊勢・熊野・瀬戸内・山口<br>ぐるっとドライブ旅</h1>
+  <p class="sub">ご夫婦の旅程（7泊8日）</p>
+  <div class="facts">
+    <span>📅 12/27（日）〜 1/3（日）</span>
+    <span>🚗 CX-5（ディーゼル）</span>
+    <span>🏠 横浜発着</span>
+  </div>
+  <div class="count" id="count"></div>
+  <a class="switch" id="otherLink" href="#">🚄 凌太朗さんの旅程はこちら<small>12/29 新神戸で合流 〜 1/2 新下関で解散</small></a>
+</header>
+<main>
+  <section class="route">
+    <h2>ルート</h2>
+    <ol>
+      <li>横浜</li><li class="arrow">→</li><li>伊勢神宮</li><li class="arrow">→</li><li>勝浦温泉</li><li class="arrow">→</li><li>熊野三山</li><li class="arrow">→</li><li>和歌山</li><li class="arrow">→</li><li class="join">新神戸で合流</li><li class="arrow">→</li><li>姫路</li><li class="arrow">⛴</li><li>小豆島</li><li class="arrow">→</li><li>錦帯橋</li><li class="arrow">→</li><li>下関</li><li class="arrow">→</li><li>防府・山口</li><li class="arrow">→</li><li class="join">新下関で解散</li><li class="arrow">→</li><li>京都</li><li class="arrow">→</li><li>横浜</li>
+    </ol>
+  </section>
+
+  <nav class="days" id="nav">
+    <a href="#d1227">12/27<b>日</b></a><a href="#d1228">12/28<b>月</b></a><a href="#d1229">12/29<b>火</b></a><a href="#d1230">12/30<b>水</b></a><a href="#d1231">12/31<b>木</b></a><a href="#d0101">1/1<b>金</b></a><a href="#d0102">1/2<b>土</b></a><a href="#d0103">1/3<b>日</b></a>
+  </nav>
+
+  <section class="day" id="d1227" data-date="2026-12-27">
+    <div class="day-head"><div class="date"><span class="d">27</span><span class="w">12月・日</span></div>
+      <div><div class="n">DAY 1<span class="badge-now">今日</span></div><h3>横浜出発 ➔ 伊勢神宮 ➔ 勝浦温泉</h3></div></div>
+    <ul class="tl">
+      <li><span class="t">06:00</span><span class="e">横浜の自宅を出発（新東名・伊勢湾岸道・伊勢道経由）</span></li>
+      <li class="key"><span class="t">11:30</span><span class="e"><strong>伊勢神宮 内宮</strong>に到着・参拝。おかげ横丁で昼食＆散策<br><span class="food">伊勢うどん</span><span class="food">赤福</span><span class="ofcs"><a class="ofc" href="https://www.isejingu.or.jp/">📷 伊勢神宮</a></span></span></li>
+      <li><span class="t">14:30</span><span class="e">伊勢を出発、紀勢自動車道で南紀・勝浦へ</span></li>
+      <li><span class="t">17:00</span><span class="e">勝浦温泉にチェックイン。夕食と温泉<br><span class="food">生マグロ</span><span class="ofcs"><a class="ofc" href="http://www.nachikan.jp/">📷 那智勝浦町観光協会</a></span></span></li>
+    </ul>
+    <div class="gwrap"><a class="gmap" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=driving&amp;origin=%E4%B8%AD%E5%B1%B1%E9%A7%85&amp;origin_place_id=ChIJwUvvcw9YGGARA1r6Q8BpVKs&amp;destination=%E7%B4%80%E4%BC%8A%E5%8B%9D%E6%B5%A6%E9%A7%85&amp;destination_place_id=ChIJB-Hl4H8WBmAR2sYf9UDMCdY&amp;waypoints=%E4%BC%8A%E5%8B%A2%E7%A5%9E%E5%AE%AE+%E5%86%85%E5%AE%AE%7C%E3%81%8A%E3%81%8B%E3%81%92%E6%A8%AA%E4%B8%81&amp;waypoint_place_ids=ChIJ8zef3-tQBGARpwz2UzdmCfA%7CChIJL93NSZNQBGARmNlxBX-cj9Y">🗺 Googleマップでこの日のルートを開く</a><small class="gnote">※自宅（中山駅付近）から出発するルートです</small></div>
+    <div class="stay">勝浦温泉 または 那智勝浦</div>
+  </section>
+
+  <section class="day" id="d1228" data-date="2026-12-28">
+    <div class="day-head"><div class="date"><span class="d">28</span><span class="w">12月・月</span></div>
+      <div><div class="n">DAY 2<span class="badge-now">今日</span></div><h3>熊野三山めぐり ➔ 和歌山市</h3></div></div>
+    <ul class="tl">
+      <li class="key"><span class="t">09:00</span><span class="e"><strong>那智の滝</strong>・熊野那智大社・青岸渡寺を拝観<span class="ofcs"><a class="ofc" href="http://www.nachikan.jp/kumano/nachinotaki/">📷 那智の滝（那智勝浦町観光協会）</a><a class="ofc" href="https://kumanonachitaisha.or.jp/">📷 熊野那智大社</a></span></span></li>
+      <li><span class="t">10:30</span><span class="e">新宮の<strong>熊野速玉大社</strong>を参拝<span class="ofcs"><a class="ofc" href="https://www.pref.wakayama.lg.jp/prefg/081300/d00214829.html">📷 熊野速玉大社（和歌山県）</a></span></span></li>
+      <li class="key"><span class="t">11:30</span><span class="e"><strong>熊野本宮大社</strong>と大斎原の大鳥居を参拝。本宮で昼食<span class="ofcs"><a class="ofc" href="http://www.hongu.jp/">📷 熊野本宮大社</a></span></span></li>
+      <li><span class="t">12:30</span><span class="e">国道311号・阪和道で和歌山市へ（約2時間30分）</span></li>
+      <li><span class="t">15:00</span><span class="e">和歌山市に到着。<strong>和歌山城</strong>を見学（天守は17:00入場まで）<span class="ofcs"><a class="ofc" href="http://wakayamajo.jp/index.html">📷 和歌山城</a></span></span></li>
+      <li><span class="t">夜</span><span class="e">和歌山市内で夕食<br><span class="food">和歌山ラーメン</span></span></li>
+    </ul>
+    <div class="gwrap"><a class="gmap" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=driving&amp;origin=%E7%B4%80%E4%BC%8A%E5%8B%9D%E6%B5%A6%E9%A7%85&amp;origin_place_id=ChIJB-Hl4H8WBmAR2sYf9UDMCdY&amp;destination=%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%9F%8E&amp;destination_place_id=ChIJxdJgocGyAGARk2yAa2IxAOE&amp;waypoints=%E9%82%A3%E6%99%BA%E3%81%AE%E6%BB%9D%7C%E7%86%8A%E9%87%8E%E9%82%A3%E6%99%BA%E5%A4%A7%E7%A4%BE%7C%E7%86%8A%E9%87%8E%E9%80%9F%E7%8E%89%E5%A4%A7%E7%A4%BE%7C%E7%86%8A%E9%87%8E%E6%9C%AC%E5%AE%AE%E5%A4%A7%E7%A4%BE&amp;waypoint_place_ids=ChIJ-Z5J5fM_BmARNg5zbIxDfNc%7CChIJ1d7uC3cVBmARsVLmY1fG2yw%7CChIJdbGt8qZsBmARuhkpTB1WUDE%7CChIJP3bnaCFaBmARAu9qmLB6eXA">🗺 Googleマップでこの日のルートを開く</a></div>
+    <div class="stay">和歌山市内</div>
+  </section>
+
+  <section class="day" id="d1229" data-date="2026-12-29">
+    <div class="day-head"><div class="date"><span class="d">29</span><span class="w">12月・火</span></div>
+      <div><div class="n">DAY 3<span class="badge-now">今日</span></div><h3>和歌山 ➔ 神戸 ➔ 凌太朗さん合流 ➔ 姫路</h3></div></div>
+    <ul class="tl">
+      <li><span class="t">午前</span><span class="e">和歌山市内をのんびり散策<br><small class="warn">※和歌山城の天守は12/29〜31休館（公園は散策可）</small></span></li>
+      <li><span class="t">11:30</span><span class="e">阪和道・阪神高速で神戸へ（約1時間30分）</span></li>
+      <li><span class="t">13:00</span><span class="e">北野異人館周辺を散策<span class="ofcs"><a class="ofc" href="https://www.feel-kobe.jp/">📷 神戸公式観光サイト</a></span></span></li>
+      <li class="key"><span class="t">15:23</span><span class="e"><strong>新神戸駅で凌太朗さんを車でピックアップ・合流！</strong></span></li>
+      <li><span class="t">15:45</span><span class="e">第二神明・姫路バイパスで姫路へ（約1時間）</span></li>
+      <li><span class="t">17:00</span><span class="e">姫路に到着。夜の姫路城を眺めながら合流のお祝い夕食<br><span class="food">姫路おでん</span><span class="ofcs"><a class="ofc" href="https://www.himeji-kanko.jp/">📷 姫路観光ナビ ひめのみち</a></span></span></li>
+    </ul>
+    <div class="gwrap"><a class="gmap" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=driving&amp;origin=%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%9F%8E&amp;origin_place_id=ChIJxdJgocGyAGARk2yAa2IxAOE&amp;destination=%E5%A7%AB%E8%B7%AF%E5%9F%8E&amp;destination_place_id=ChIJsyQzogPgVDURsYG6bi-MT3o&amp;waypoints=%E5%8C%97%E9%87%8E%E7%95%B0%E4%BA%BA%E9%A4%A8%E8%A1%97%7C%E6%96%B0%E7%A5%9E%E6%88%B8%E9%A7%85&amp;waypoint_place_ids=ChIJT6cViuCOAGARegX_ORkvbs0%7CChIJi_tJT8OOAGAR-zhJ9dkQC3k">🗺 Googleマップでこの日のルートを開く</a></div>
+    <div class="stay">姫路市内</div>
+  </section>
+
+  <section class="day" id="d1230" data-date="2026-12-30">
+    <div class="day-head"><div class="date"><span class="d">30</span><span class="w">12月・水</span></div>
+      <div><div class="n">DAY 4<span class="badge-now">今日</span></div><h3>姫路城 ➔ フェリーで小豆島へ</h3></div></div>
+    <ul class="tl">
+      <li><span class="t">08:30</span><span class="e"><strong>姫路城</strong>を外から見学<br><small class="warn">※12/29・30は休城日のため天守には入れません</small><span class="ofcs"><a class="ofc" href="https://www.himeji-kanko.jp/">📷 姫路観光ナビ ひめのみち</a></span></span></li>
+      <li class="key"><span class="t">09:45</span><span class="e">姫路港から<strong>小豆島フェリー</strong>で車ごと小豆島へ（11:25 福田港着）<br><small class="warn">※車は2か月前から予約できます。年末なので早めの予約を</small><span class="ofcs"><a class="ofc" href="https://www.shikokuferry.com/">📷 小豆島フェリー</a></span></span></li>
+      <li class="key"><span class="t">12:00</span><span class="e"><strong>寒霞渓</strong>へ。ロープウェイで渓谷の空中散歩、山頂付近で昼食<br><span class="food">小豆島そうめん</span><span class="ofcs"><a class="ofc" href="https://shodoshima.or.jp/">📷 小豆島観光協会</a></span></span></li>
+      <li><span class="t">14:30</span><span class="e">道の駅「小豆島オリーブ公園」で白い風車とオリーブ畑を散策<br><span class="food">オリーブソフト</span></span></li>
+      <li><span class="t">16:30</span><span class="e">土庄の宿にチェックイン。夕食<br><span class="food">オリーブ牛</span><span class="food">瀬戸内の魚</span></span></li>
+    </ul>
+    <div class="gwrap"><a class="gmap" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=driving&amp;origin=%E5%A7%AB%E8%B7%AF%E5%9F%8E&amp;origin_place_id=ChIJsyQzogPgVDURsYG6bi-MT3o&amp;destination=%E5%B0%8F%E8%B1%86%E5%B3%B6%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC+%E5%A7%AB%E8%B7%AF%E6%B8%AF&amp;destination_place_id=ChIJ8V7_YNXmVDURdRl3-_8xHsE">🗺 Googleマップでこの日のルートを開く</a><small class="gnote">※フェリーを降りた後は：福田港 → 寒霞渓 → オリーブ公園 → 土庄</small></div>
+    <div class="gwrap"><a class="gmap" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=driving&amp;origin=%E7%A6%8F%E7%94%B0%E6%B8%AF&amp;origin_place_id=ChIJ3-xlEPV8VDUR9CNyDJGu5wY&amp;destination=%E3%82%A8%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AB%E3%83%AD%E3%83%BC%E3%83%89&amp;destination_place_id=ChIJISiqLJiJUzUREqZM0_6o3jM&amp;waypoints=%E5%AF%92%E9%9C%9E%E6%B8%93%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4+%E3%81%93%E3%81%86%E3%81%86%E3%82%93%E9%A7%85%7C%E9%81%93%E3%81%AE%E9%A7%85+%E5%B0%8F%E8%B1%86%E5%B3%B6%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E5%85%AC%E5%9C%92&amp;waypoint_place_ids=ChIJq6pGvxJ5VDURskDG1vwk4Sc%7CChIJC-KIFXR4VDURasxl3L0o26M">🗺 小豆島内のルートを開く</a></div>
+    <div class="stay">小豆島（土庄）</div>
+  </section>
+
+  <section class="day" id="d1231" data-date="2026-12-31">
+    <div class="day-head"><div class="date"><span class="d">31</span><span class="w">12月・木</span></div>
+      <div><div class="n">DAY 5<span class="badge-now">今日</span></div><h3>エンジェルロード ➔ 錦帯橋 ➔ 下関で年越し</h3></div></div>
+    <ul class="tl">
+      <li class="key"><span class="t">07:45</span><span class="e">朝の<strong>エンジェルロード</strong>を渡る（7:40ごろから砂の道が現れる予想）<span class="ofcs"><a class="ofc" href="https://www.town.tonosho.kagawa.jp/kanko/map_pamphlet/3277.html">📷 エンジェルロード潮見表（土庄町）</a></span></span></li>
+      <li><span class="t">09:00頃</span><span class="e">土庄港からフェリーで新岡山港へ（約1時間10分）<br><small class="warn">※便の時刻は事前に確認してください</small></span></li>
+      <li><span class="t">10:30</span><span class="e">山陽道で岩国へ（約3時間）</span></li>
+      <li class="key"><span class="t">13:30</span><span class="e">岩国の<strong>錦帯橋</strong>を散策・遅めの昼食<br><span class="food">岩国寿司</span><span class="ofcs"><a class="ofc" href="https://kankou.iwakuni-city.net/kintaikyo.html">📷 錦帯橋（岩国市観光）</a></span></span></li>
+      <li><span class="t">15:00</span><span class="e">山陽道で下関へ（約2時間）</span></li>
+      <li><span class="t">17:00</span><span class="e">ヴィアイン下関にチェックイン。大浴場「維新の湯」のあと、ふぐ料理で年越し<br><span class="food">ふぐ料理</span><span class="ofcs"><a class="ofc" href="https://yamaguchi-tourism.jp/">📷 山口県観光（下関）</a></span></span></li>
+    </ul>
+    <div class="gwrap"><a class="gmap" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=driving&amp;origin=%E6%96%B0%E5%B2%A1%E5%B1%B1%E6%B8%AF+%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB&amp;origin_place_id=ChIJh_xxDKAJVDURf7esvkPcjW4&amp;destination=%E3%83%B4%E3%82%A3%E3%82%A2%E3%82%A4%E3%83%B3%E4%B8%8B%E9%96%A2&amp;destination_place_id=ChIJFV3UXLa9QzURbLV9IFnRyAM&amp;waypoints=%E9%8C%A6%E5%B8%AF%E6%A9%8B&amp;waypoint_place_ids=ChIJHWZuaz40RTURCJfwPHOzVGY">🗺 Googleマップでこの日のルートを開く</a><small class="gnote">※新岡山港からのルートです</small></div>
+    <div class="stay">ヴィアイン下関〈維新の湯〉（1泊目）</div>
+  </section>
+
+  <section class="day" id="d0101" data-date="2027-01-01">
+    <div class="day-head"><div class="date hol"><span class="d">1</span><span class="w">1月・元日</span></div>
+      <div><div class="n">DAY 6<span class="badge-now">今日</span></div><h3>防府天満宮で初詣 ➔ 瑠璃光寺五重塔</h3></div></div>
+    <ul class="tl">
+      <li><span class="t">09:00</span><span class="e">下関を出発、山陽道で防府へ（約1時間）</span></li>
+      <li class="key"><span class="t">10:00</span><span class="e">日本最初の天満宮・<strong>防府天満宮で初詣</strong><span class="ofcs"><a class="ofc" href="https://yamaguchi-tourism.jp/spot/detail_14780.html">📷 防府天満宮（おいでませ山口へ）</a></span></span></li>
+      <li><span class="t">12:00</span><span class="e">山口市へ移動（約30分）して昼食<br><span class="food">瓦そば</span></span></li>
+      <li class="key"><span class="t">13:00</span><span class="e">令和の大改修を終えた国宝<strong>瑠璃光寺五重塔</strong>を見学<span class="ofcs"><a class="ofc" href="https://yamaguchi-tourism.jp/rurikoji-guide">📷 瑠璃光寺五重塔（おいでませ山口へ）</a></span></span></li>
+      <li><span class="t">14:30</span><span class="e">山陽道で下関へ戻る（約1時間15分）</span></li>
+      <li><span class="t">16:00</span><span class="e">ホテル近くの<strong>赤間神宮</strong>にもお参り</span></li>
+      <li><span class="t">夜</span><span class="e">下関でふぐ料理の夕食。ホテルの温泉でゆっくり<br><span class="food">ふぐ料理</span><span class="ofcs"><a class="ofc" href="https://yamaguchi-tourism.jp/">📷 山口県観光（下関）</a></span></span></li>
+    </ul>
+    <div class="gwrap"><a class="gmap" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=driving&amp;origin=%E3%83%B4%E3%82%A3%E3%82%A2%E3%82%A4%E3%83%B3%E4%B8%8B%E9%96%A2&amp;origin_place_id=ChIJFV3UXLa9QzURbLV9IFnRyAM&amp;destination=%E8%B5%A4%E9%96%93%E7%A5%9E%E5%AE%AE&amp;destination_place_id=ChIJAQAQh3e9QzUR8mNjoS49mA4&amp;waypoints=%E9%98%B2%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE%7C%E7%91%A0%E7%92%83%E5%85%89%E5%AF%BA%E4%BA%94%E9%87%8D%E5%A1%94&amp;waypoint_place_ids=ChIJfQqFB--SRDURpPbjOsb8EoU%7CChIJC2RcR6iXRDURFBKAXpBesQc">🗺 Googleマップでこの日のルートを開く</a></div>
+    <div class="stay">ヴィアイン下関〈維新の湯〉（2泊目・連泊）</div>
+  </section>
+
+  <section class="day" id="d0102" data-date="2027-01-02">
+    <div class="day-head"><div class="date"><span class="d">2</span><span class="w">1月・土</span></div>
+      <div><div class="n">DAY 7<span class="badge-now">今日</span></div><h3>新下関駅で解散 ➔ 山陽道を東へ ➔ 京都南IC</h3></div></div>
+    <ul class="tl">
+      <li class="key"><span class="t">09:15</span><span class="e">ホテルを出発、車で約15分の新下関駅へ。<strong>09:46発の新幹線で凌太朗さんを見送り、解散</strong></span></li>
+      <li><span class="t">10:00</span><span class="e">下関ICから山陽道でそのまま東へ</span></li>
+      <li><span class="t">14:00頃</span><span class="e">吉備SA（岡山）などで遅めのランチ休憩</span></li>
+      <li><span class="t">18:00頃</span><span class="e">京都南IC付近のホテルに到着・宿泊</span></li>
+    </ul>
+    <div class="gwrap"><a class="gmap" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=driving&amp;origin=%E3%83%B4%E3%82%A3%E3%82%A2%E3%82%A4%E3%83%B3%E4%B8%8B%E9%96%A2&amp;origin_place_id=ChIJFV3UXLa9QzURbLV9IFnRyAM&amp;destination=%E4%BA%AC%E9%83%BD%E5%8D%97%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%81%E3%82%A7%E3%83%B3%E3%82%B8&amp;destination_place_id=ChIJBz53hIsFAWARIC4tCBy3908&amp;waypoints=%E6%96%B0%E4%B8%8B%E9%96%A2%E9%A7%85%7C%E5%90%89%E5%82%99%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%A8%E3%83%AA%E3%82%A2+%E4%B8%8A%E3%82%8A&amp;waypoint_place_ids=ChIJM4P6ybqiQzUR_NjbS3Bh1jE%7CChIJ974D0s0GVDURIK6F2FpQ6aA">🗺 Googleマップでこの日のルートを開く</a></div>
+    <div class="stay">京都南IC付近のホテル</div>
+  </section>
+
+  <section class="day" id="d0103" data-date="2027-01-03">
+    <div class="day-head"><div class="date"><span class="d">3</span><span class="w">1月・日</span></div>
+      <div><div class="n">DAY 8<span class="badge-now">今日</span></div><h3>京都観光 ➔ 横浜へ帰着</h3></div></div>
+    <ul class="tl">
+      <li class="key"><span class="t">09:00</span><span class="e"><strong>京都観光</strong>（行き先は検討中）<span class="ofcs"><a class="ofc" href="https://ja.kyoto.travel/">📷 京都観光Navi</a></span></span></li>
+      <li><span class="t">13:00</span><span class="e">京都を出発、新名神・新東名経由で東へ<br><small class="warn">※1/3はUターンラッシュのピークで、午後は東名上りなどで長い渋滞が出やすいです。出発前に渋滞予測を確認してください</small></span></li>
+      <li class="key"><span class="t">19:00〜20:00頃</span><span class="e"><strong>横浜の自宅に帰着</strong>（渋滞次第）</span></li>
+    </ul>
+    <div class="gwrap"><a class="gmap" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=driving&amp;origin=%E4%BA%AC%E9%83%BD%E5%8D%97%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%81%E3%82%A7%E3%83%B3%E3%82%B8&amp;origin_place_id=ChIJBz53hIsFAWARIC4tCBy3908&amp;destination=%E4%B8%AD%E5%B1%B1%E9%A7%85&amp;destination_place_id=ChIJwUvvcw9YGGARA1r6Q8BpVKs">🗺 Googleマップでこの日のルートを開く</a><small class="gnote">※京都南IC付近のホテルから自宅（中山駅付近）までのルートです</small></div>
+  </section>
+</main>
+<p class="note">📷 のリンクは各観光地の公式サイトです（写真や営業時間はリンク先でご覧ください）</p>
+<footer>時刻は目安です。天候や道路状況により変更になることがあります。</footer>
+
+<script>
+(function(){
+  var OTHER_URL = "ryotaro.html";
+  var link = document.getElementById("otherLink");
+  if (OTHER_URL === "#") link.style.display = "none"; else link.href = OTHER_URL;
+
+  var now = new Date();
+  var jst = new Date(now.getTime() + (now.getTimezoneOffset() + 540) * 60000);
+  var today = jst.getFullYear() + "-" + String(jst.getMonth()+1).padStart(2,"0") + "-" + String(jst.getDate()).padStart(2,"0");
+  var start = new Date("2026-12-27T00:00:00+09:00"), end = new Date("2027-01-04T00:00:00+09:00");
+  var c = document.getElementById("count");
+  if (now < start) {
+    var days = Math.ceil((start - now) / 86400000);
+    c.textContent = "出発まで あと " + days + " 日";
+  } else if (now < end) {
+    c.textContent = "ただいま旅の途中です";
+  } else {
+    c.textContent = "楽しい旅をありがとう！";
+  }
+  var cur = document.querySelector('.day[data-date="' + today + '"]');
+  if (cur) {
+    cur.classList.add("now");
+    var a = document.querySelector('nav.days a[href="#' + cur.id + '"]');
+    if (a) { a.classList.add("now"); a.scrollIntoView({inline:"center", block:"nearest"}); }
+    if (!location.hash) setTimeout(function(){ cur.scrollIntoView({behavior:"smooth"}); }, 400);
+  }
+})();
+</script>
+</body>
+</html>
